@@ -405,6 +405,7 @@ export default function LiveCooking() {
         isOpen={modifyOpen}
         onClose={() => setModifyOpen(false)}
         onModify={handleStepModify}
+        currentMods={cookingMods}
       />
     </div>
   );

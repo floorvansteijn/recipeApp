@@ -128,7 +128,7 @@ export const sampleRecipes = [
     protein_type: "vegetarian",
     cooking_time: 15,
     portions: 3,
-    tags: ["Quick", "Lunch", "Healthy"],
+    tags: ["Lebanese", "Quick", "Lunch", "Healthy"],
     ingredients: [
       { name: "Pita bread", amount: "2", notes: "torn into pieces" },
       { name: "Romaine lettuce", amount: "1 head", notes: "chopped" },
