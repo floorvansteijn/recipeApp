@@ -1,3 +1,8 @@
+import step1Image from '../images/images/step1.jpg';
+import step2Image from '../images/images/step2.jpg';
+import step3Image from '../images/images/step3.jpg';
+import step4Image from '../images/images/step4.jpg';
+
 // Static data for cuisine types and daily inspiration
 export const cuisineTypes = [
   { name: "Lebanese", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=400&fit=crop" },
@@ -54,19 +59,19 @@ export const sampleRecipes = [
           title: "How to Debone Chicken",
           steps: [
             { 
-              image: "/images/step1.jpg", 
+              image: step1Image, 
               caption: "Locate the bone and make a shallow cut along its length to expose it." 
             },
             { 
-              image: "/images/step2.jpg", 
+              image: step2Image, 
               caption: "Carefully cut around both joints at the ends to loosen the bone." 
             },
             { 
-              image: "/images/step3.jpg", 
+              image: step3Image, 
               caption: "Slide the knife under the bone and lift it away from the meat." 
             },
             { 
-              image: "/images/step4.jpg", 
+              image: step4Image, 
               caption: "Trim any excess cartilage for a perfectly clean, boneless thigh." 
             }
           ]
