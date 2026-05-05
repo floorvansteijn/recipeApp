@@ -48,7 +48,7 @@ function App() {
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router>
+        <Router basename="/recipeApp/"r>
           <AuthenticatedApp />
         </Router>
         <Toaster />
