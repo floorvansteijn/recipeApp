@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-playfair: 'Playfair Display', serif;
+    --font-inter: 'Inter', sans-serif;
+
+    --background: 80 14% 94%;
+    --foreground: 0 0% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%;
+    --primary: 88 50% 43%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 48 100% 90%;
+    --secondary-foreground: 0 0% 18%;
+    --muted: 80 14% 94%;
+    --muted-foreground: 55 7% 39%;
+    --accent: 48 100% 71%;
+    --accent-foreground: 0 0% 18%;
+    --destructive: 1 76% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 10% 81%;
+    --input: 40 10% 81%;
+    --ring: 88 50% 43%;
+    --chart-1: 88 50% 43%;
+    --chart-2: 48 100% 71%;
+    --chart-3: 0 0% 18%;
+    --chart-4: 120 47% 33%;
+    --chart-5: 37 90% 55%;
+    --radius: 0.75rem;
+
+    --green-100: #E7F6C1;
+    --green-200: #CDE8A4;
+    --green-500: #7FA33B;
+    --green-700: #4E6E1E;
+    --dark: #2E2E2E;
+    --text-secondary: #6B6B5E;
+    --yellow-100: #FFF5CC;
+    --yellow-300: #FFD86B;
+    --cream: #FFFDF6;
+    --page-bg: #F2F4EF;
+    --card-bg: #FFFFFF;
+    --border-color: #D6D3C8;
+    --success: #2E7D32;
+    --success-bg: #E8F5E9;
+    --warning: #F6A623;
+    --warning-bg: #FFF8E1;
+    --error: #E53935;
+    --error-bg: #FFEBEE;
+    --info: #607D8B;
+    --info-bg: #ECEFF1;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 88 50% 43%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 48 30% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 55 7% 60%;
+    --accent: 48 60% 40%;
+    --accent-foreground: 0 0% 95%;
+    --destructive: 1 76% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 88 50% 43%;
+    --chart-1: 88 50% 43%;
+    --chart-2: 48 100% 71%;
+    --chart-3: 0 0% 80%;
+    --chart-4: 120 47% 33%;
+    --chart-5: 37 90% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter);
+  }
+}
+
+/* Scrollbar hide for horizontal scroll */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
