@@ -24,7 +24,7 @@ export default function StepModifySheet({ isOpen, onClose, onModify, currentMods
         {currentMods.length > 0 && (
           <div 
             className="p-4 rounded-xl border-[1.5px]" 
-            style={{ backgroundColor: "var(--green-100)", borderColor: "var(--dark)" }}
+            style={{ backgroundColor: "var(--green-100)", borderColor: "var(--green-500)" }}
           >
             <h4 className="font-inter text-[12px] font-bold uppercase tracking-wider mb-3" style={{ color: "var(--green-500)" }}>
               Added to this step
