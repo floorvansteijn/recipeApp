@@ -158,7 +158,7 @@ export default function SaveRecipe() {
           disabled={saving || !recipeName.trim()}
           className="w-full py-3.5 rounded-full font-inter font-medium text-[14px] transition-all hover:opacity-90 active:scale-[0.97]"
           style={{
-            backgroundColor: recipeName.trim() ? "var(--dark)" : "var(--border-color)",
+            backgroundColor: recipeName.trim() ? "#4E6E1E" : "var(--border-color)",
             color: recipeName.trim() ? "#FFFFFF" : "var(--text-secondary)",
             minHeight: 44,
             opacity: recipeName.trim() && !saving ? 1 : 0.4,

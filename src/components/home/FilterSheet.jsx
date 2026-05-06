@@ -38,7 +38,7 @@ export default function FilterSheet({ isOpen, onClose, onApply, initialFilters }
                 className="py-2.5 px-4 rounded-full text-[13px] font-inter font-medium transition-all duration-150"
                 style={
                   selectedProtein === p
-                    ? { backgroundColor: "var(--green-500)", color: "#FFFFFF" }
+                    ? { backgroundColor: "#4E6E1E", color: "#FFFFFF" }
                     : { backgroundColor: "var(--yellow-100)", color: "var(--dark)", border: "1px solid var(--yellow-300)" }
                 }
               >
@@ -93,7 +93,7 @@ export default function FilterSheet({ isOpen, onClose, onApply, initialFilters }
                 className="py-2.5 px-3 rounded-full text-[13px] font-inter font-medium transition-all duration-150"
                 style={
                   selectedTime === t
-                    ? { backgroundColor: "var(--green-500)", color: "#FFFFFF" }
+                    ? { backgroundColor: "#4E6E1E", color: "#FFFFFF" }
                     : { backgroundColor: "var(--yellow-100)", color: "var(--dark)", border: "1px solid var(--yellow-300)" }
                 }
               >
@@ -107,7 +107,7 @@ export default function FilterSheet({ isOpen, onClose, onApply, initialFilters }
         <button
           onClick={handleApply}
           className="w-full py-3 rounded-full font-inter font-medium text-[14px] transition-all duration-150 hover:opacity-90 active:scale-[0.97] mt-4"
-          style={{ backgroundColor: "var(--dark)", color: "#FFFFFF", minHeight: 44 }}
+          style={{ backgroundColor: "#4E6E1E", color: "#FFFFFF", minHeight: 44 }}
         >
           Apply Filters
         </button>

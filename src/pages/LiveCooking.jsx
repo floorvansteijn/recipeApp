@@ -249,7 +249,7 @@ export default function LiveCooking() {
             <BookOpen size={20} style={{ color: "var(--dark)" }} />
           </button>
         </div>
-        <div className="font-inter font-semibold text-[13px]" style={{ color: "var(--green-500)", letterSpacing: "0.8px" }}>
+        <div className="font-inter font-semibold text-[13px]" style={{ color: "#4E6E1E", letterSpacing: "0.8px" }}>
           STEP {currentStep + 1} OF {steps.length}
         </div>
         <div className="w-20" />
@@ -294,14 +294,14 @@ export default function LiveCooking() {
           className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-[0.95] active:scale-[0.90]"
           style={{ backgroundColor: "var(--green-100)" }}
         >
-          <Clock size={20} style={{ color: "var(--green-500)" }} />
+          <Clock size={20} style={{ color: "var(--dark)" }} />
         </button>
         <button
           onClick={() => setHelpOpen(true)}
           className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-[0.95] active:scale-[0.90]"
           style={{ backgroundColor: "var(--green-100)" }}
         >
-          <HelpCircle size={20} style={{ color: "var(--green-500)" }} />
+          <HelpCircle size={20} style={{ color: "var(--dark)" }} />
         </button>
         <div
           className="w-12 h-12 rounded-full flex items-center justify-center relative"
@@ -322,8 +322,8 @@ export default function LiveCooking() {
           disabled={currentStep === 0}
           className="flex-1 py-3 rounded-full font-inter font-medium text-[14px] border-[1.5px] transition-all"
           style={{
-            borderColor: "var(--dark)",
-            color: "var(--dark)",
+            borderColor: "#4E6E1E",
+            color: "#4E6E1E",
             minHeight: 44,
             opacity: currentStep === 0 ? 0.4 : 1,
           }}
@@ -333,7 +333,7 @@ export default function LiveCooking() {
         <button
           onClick={goNext}
           className="flex-1 py-3 rounded-full font-inter font-medium text-[14px] transition-all hover:opacity-90 active:scale-[0.97]"
-          style={{ backgroundColor: "var(--dark)", color: "#FFFFFF", minHeight: 44 }}
+          style={{ backgroundColor: "#4E6E1E", color: "#FFFFFF", minHeight: 44 }}
         >
           {currentStep === steps.length - 1 ? "Finish" : "Next"}
         </button>
@@ -367,14 +367,14 @@ export default function LiveCooking() {
                 <button
                   onClick={() => handleSaveDecision(false)}
                   className="flex-1 py-3 rounded-full font-inter font-medium text-[14px] border-[1.5px] transition-all hover:opacity-80"
-                  style={{ borderColor: "var(--dark)", color: "var(--dark)" }}
+                  style={{ borderColor: "#4E6E1E", color: "#4E6E1E" }}
                 >
                   No, I don't
                 </button>
                 <button
                   onClick={() => handleSaveDecision(true)}
                   className="flex-1 py-3 rounded-full font-inter font-medium text-[14px] transition-all hover:opacity-90"
-                  style={{ backgroundColor: "var(--dark)", color: "#FFFFFF" }}
+                  style={{ backgroundColor: "#4E6E1E", color: "#FFFFFF" }}
                 >
                   Yes, I want
                 </button>
