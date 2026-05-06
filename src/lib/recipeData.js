@@ -5,10 +5,10 @@ import step4Image from '../images/images/step4.jpg';
 
 // Static data for cuisine types and daily inspiration
 export const cuisineTypes = [
-  { name: "Lebanese", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=400&fit=crop" },
   { name: "Chinese", image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&h=400&fit=crop" },
   { name: "Italian", image: "https://images.unsplash.com/photo-1498579150354-977475b7ea0b?w=400&h=400&fit=crop" },
   { name: "Japanese", image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=400&h=400&fit=crop" },
+  { name: "Lebanese", image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=400&fit=crop" },
   { name: "Mexican", image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=400&fit=crop" },
   { name: "Indian", image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=400&fit=crop" },
   { name: "Thai", image: "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=400&h=400&fit=crop" },
@@ -27,64 +27,6 @@ export const dailyInspiration = [
 ];
 
 export const sampleRecipes = [
-  {
-    id: "lebanesechickenandrice",
-    title: "Lebanese Chicken and Rice",
-    description: "A fragrant and spicy chicken dish with warm Middle Eastern spices, served over fluffy rice.",
-    image_url: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=600&fit=crop",
-    cuisine: "Lebanese",
-    protein_type: "chicken",
-    cooking_time: 45,
-    portions: 2,
-    tags: ["Dinner", "Lebanese"],
-    ingredients: [
-      { name: "Chicken thighs", amount: "400g", notes: "" },
-      { name: "White rice", amount: "190g", notes: "" },
-      { name: "Water", amount: "380ml", notes: "for cooking rice" },
-      { name: "Garlic", amount: "2 cloves", notes: "" },
-      { name: "Yellow onion", amount: "1 large", notes: "" },
-      { name: "Lemon", amount: "1", notes: "fresh" },
-      { name: "Olive oil", amount: "2 tbsp", notes: "" },
-      { name: "Fresh parsley", amount: "1/4 cup", notes: "chopped" },
-      { name: "Salt", amount: "to taste", notes: "" },
-      { name: "Black pepper", amount: "to taste", notes: "" },
-      { name: "Lebanese Spices", amount: "1/2 tsp each", notes: "cumin, coriander, cinnamon, turmeric" },
-    ],
-    steps: [
-      { instruction: "Rinse the rice, cook the water. Bring to boil, then cover and turn the heat to low for 30 minutes.", duration_minutes: 30},
-      { 
-        instruction: "Debone the chicken.", 
-        duration_minutes: 15,
-        guide: {
-          title: "How to Debone Chicken",
-          steps: [
-            { 
-              image: step1Image, 
-              caption: "Locate the bone and make a shallow cut along its length to expose it." 
-            },
-            { 
-              image: step2Image, 
-              caption: "Carefully cut around both joints at the ends to loosen the bone." 
-            },
-            { 
-              image: step3Image, 
-              caption: "Slide the knife under the bone and lift it away from the meat." 
-            },
-            { 
-              image: step4Image, 
-              caption: "Trim any excess cartilage for a perfectly clean, boneless thigh." 
-            }
-          ]
-        }
-      },
-      { instruction: "Cut the onion.", duration_minutes: 2},
-      { instruction: "Heat oil in the pan and put in the chopped onion.", duration_minutes: 3 },
-      { instruction: "Add your seasoning: a pinch of salt, pepper, and a teaspoon each of cumin, coriander, and cinnamon.", duration_minutes: 1 },
-      { instruction: "Stir for 1 minute.", duration_minutes: 1 },
-      { instruction: "Push the onions to the side and place your chicken thighs in the pan", duration_minutes: 2 },
-      { instruction: "Put the other half in a container once it cools.", duration_minutes: 1},
-    ],
-  },
   {
     id: "demo-lb-2",
     title: "Lamb Kafta with Tahini",
@@ -148,6 +90,64 @@ export const sampleRecipes = [
       { instruction: "Whisk together lemon juice, olive oil, sumac, and salt for the dressing.", duration_minutes: 2 },
       { instruction: "Toss the salad with the dressing just before serving.", duration_minutes: 1 },
       { instruction: "Add the toasted pita pieces on top so they stay crunchy.", duration_minutes: 1 },
+    ],
+  },
+  {
+    id: "lebanesechickenandrice",
+    title: "Lebanese Chicken and Rice",
+    description: "A fragrant and spicy chicken dish with warm Middle Eastern spices, served over fluffy rice.",
+    image_url: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&h=600&fit=crop",
+    cuisine: "Lebanese",
+    protein_type: "chicken",
+    cooking_time: 45,
+    portions: 2,
+    tags: ["Dinner", "Lebanese"],
+    ingredients: [
+      { name: "Chicken thighs", amount: "400g", notes: "" },
+      { name: "White rice", amount: "190g", notes: "" },
+      { name: "Water", amount: "380ml", notes: "for cooking rice" },
+      { name: "Garlic", amount: "2 cloves", notes: "" },
+      { name: "Yellow onion", amount: "1 large", notes: "" },
+      { name: "Lemon", amount: "1", notes: "fresh" },
+      { name: "Olive oil", amount: "2 tbsp", notes: "" },
+      { name: "Fresh parsley", amount: "1/4 cup", notes: "chopped" },
+      { name: "Salt", amount: "to taste", notes: "" },
+      { name: "Black pepper", amount: "to taste", notes: "" },
+      { name: "Lebanese Spices", amount: "1/2 tsp each", notes: "cumin, coriander, cinnamon, turmeric" },
+    ],
+    steps: [
+      { instruction: "Rinse the rice, cook the water. Bring to boil, then cover and turn the heat to low for 30 minutes.", duration_minutes: 30},
+      { 
+        instruction: "Debone the chicken.", 
+        duration_minutes: 15,
+        guide: {
+          title: "How to Debone Chicken",
+          steps: [
+            { 
+              image: step1Image, 
+              caption: "Locate the bone and make a shallow cut along its length to expose it." 
+            },
+            { 
+              image: step2Image, 
+              caption: "Carefully cut around both joints at the ends to loosen the bone." 
+            },
+            { 
+              image: step3Image, 
+              caption: "Slide the knife under the bone and lift it away from the meat." 
+            },
+            { 
+              image: step4Image, 
+              caption: "Trim any excess cartilage for a perfectly clean, boneless thigh." 
+            }
+          ]
+        }
+      },
+      { instruction: "Cut the onion.", duration_minutes: 2},
+      { instruction: "Heat oil in the pan and put in the chopped onion.", duration_minutes: 3 },
+      { instruction: "Add your seasoning: a pinch of salt, pepper, and a teaspoon each of cumin, coriander, and cinnamon.", duration_minutes: 1 },
+      { instruction: "Stir for 1 minute.", duration_minutes: 1 },
+      { instruction: "Push the onions to the side and place your chicken thighs in the pan", duration_minutes: 2 },
+      { instruction: "Put the other half in a container once it cools.", duration_minutes: 1},
     ],
   },
   {

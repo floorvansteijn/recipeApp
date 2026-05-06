@@ -39,7 +39,7 @@ export default function RecipeCard({ recipe }) {
               className="text-[10px] font-inter font-medium uppercase px-2 py-0.5 rounded"
               style={{
                 backgroundColor: "var(--green-100)",
-                color: "var(--green-500)",
+                color: "var(--dark))",
                 letterSpacing: "0.8px",
               }}
             >
