@@ -66,7 +66,7 @@ export default function AddIngredientSheet({ isOpen, onClose, onAdd }) {
           disabled={!name.trim()}
           className="w-full py-3 rounded-full font-inter font-medium text-[14px] transition-all hover:opacity-90 active:scale-[0.97]"
           style={{
-            backgroundColor: name.trim() ? "var(--dark)" : "var(--border-color)",
+            backgroundColor: name.trim() ? "var(--green-700)" : "var(--border-color)",
             color: name.trim() ? "#FFFFFF" : "var(--text-secondary)",
             minHeight: 44,
             opacity: name.trim() ? 1 : 0.4,
