@@ -68,7 +68,7 @@ export default function EditIngredientSheet({
                 onClick={() => setSelectedSub(sub)}
                 className="w-full text-left py-3 px-4 rounded-xl border font-inter text-[14px] transition-all"
                 style={{
-                  borderColor: selectedSub === sub ? "var(--green-700)" : "var(--border-color)",
+                  borderColor: selectedSub === sub ? "var(--dark)" : "var(--border-color)",
                   backgroundColor: selectedSub === sub ? "var(--green-100)" : "var(--card-bg)",
                   color: "var(--dark)",
                 }}
@@ -116,7 +116,7 @@ export default function EditIngredientSheet({
               onChange={(e) => setCustomName(e.target.value)}
               className="w-full py-2.5 px-4 rounded-full border-[1.5px] font-inter text-[14px] bg-card focus:outline-none"
               style={{ borderColor: "var(--border-color)", color: "var(--dark)" }}
-              onFocus={(e) => (e.target.style.borderColor = "var(--green-700)")}
+              onFocus={(e) => (e.target.style.borderColor = "var(--dark)")}
               onBlur={(e) => (e.target.style.borderColor = "var(--border-color)")}
             />
           </div>

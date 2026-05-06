@@ -106,7 +106,7 @@ export default function RecipeOverview() {
               <span
                 key={tag}
                 className="text-[10px] font-inter font-medium uppercase px-2 py-0.5 rounded"
-                style={{ backgroundColor: "var(--green-100)", color: "var(--green-500)", letterSpacing: "0.8px" }}
+                style={{ backgroundColor: "var(--green-100)", color: "var(--dark)", letterSpacing: "0.8px" }}
               >
                 {tag}
               </span>
@@ -124,7 +124,7 @@ export default function RecipeOverview() {
               onClick={() => setActiveTab(tab)}
               className="flex-1 py-2.5 rounded-full font-inter font-semibold text-[13px] uppercase transition-all duration-200"
               style={{
-                backgroundColor: activeTab === tab ? "var(--green-700)" : "transparent",
+                backgroundColor: activeTab === tab ? "var(--dark)" : "transparent",
                 color: activeTab === tab ? "#FFFFFF" : "var(--dark)",
                 letterSpacing: "0.8px",
               }}

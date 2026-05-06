@@ -97,7 +97,7 @@ export default function SaveRecipe() {
           <div>
             <p
               className="font-inter font-semibold text-[13px] uppercase mb-3"
-              style={{ color: "var(--green-500)", letterSpacing: "0.8px" }}
+              style={{ color: "var(--dark)", letterSpacing: "0.8px" }}
             >
               Modifications
             </p>

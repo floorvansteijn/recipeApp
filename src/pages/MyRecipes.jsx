@@ -111,7 +111,7 @@ export default function MyRecipes() {
             <button
               onClick={() => navigate("/")}
               className="mt-6 px-6 py-2.5 rounded-full font-inter font-medium text-[14px]"
-              style={{ backgroundColor: "var(--green-100)", color: "var(--green-500)" }}
+              style={{ backgroundColor: "var(--green-100)", color: "var(--dark)" }}
             >
               Browse Recipes
             </button>

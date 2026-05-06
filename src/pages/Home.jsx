@@ -57,7 +57,7 @@ export default function Home() {
         <Link
           to="/my-recipes"
           className="flex items-center gap-1.5 px-4 py-2 rounded-full font-inter font-medium text-[13px] transition-all duration-150 hover:opacity-80 active:scale-[0.97]"
-          style={{ backgroundColor: "var(--green-100)", color: "var(--green-500)" }}
+          style={{ backgroundColor: "var(--green-100)", color: "var(--dark)" }}
         >
           <BookOpen size={16} />
           My Recipe Book
@@ -76,7 +76,7 @@ export default function Home() {
           /* Search Results */
           <div>
             <div className="flex items-center justify-between mb-4">
-              <p className="font-inter font-semibold text-[13px] uppercase" style={{ color: "var(--green-500)", letterSpacing: "0.8px" }}>
+              <p className="font-inter font-semibold text-[13px] uppercase" style={{ color: "var(--dark)", letterSpacing: "0.8px" }}>
                 {filteredRecipes.length} {filteredRecipes.length === 1 ? "Recipe" : "Recipes"} Found
               </p>
               <button

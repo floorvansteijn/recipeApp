@@ -267,7 +267,7 @@ export default function LiveCooking() {
 
       {/* Step Content */}
       <div className="flex-1 flex flex-col items-center justify-center px-8 text-center">
-        <span className="font-playfair font-bold text-[28px] mb-6" style={{ color: "var(--green-500)" }}>
+        <span className="font-playfair font-bold text-[28px] mb-6" style={{ color: "var(--dark)" }}>
           {currentStep + 1}
         </span>
         <p className="font-inter text-[16px] leading-relaxed max-w-sm" style={{ color: "var(--dark)" }}>
@@ -287,7 +287,7 @@ export default function LiveCooking() {
           className="w-12 h-12 rounded-full flex items-center justify-center transition-all hover:scale-[0.95] active:scale-[0.90]"
           style={{ backgroundColor: "var(--green-100)" }}
         >
-          <Pencil size={20} style={{ color: "var(--green-500)" }} />
+          <Pencil size={20} style={{ color: "var(--dark)" }} />
         </button>
         <button
           onClick={startTimer}
