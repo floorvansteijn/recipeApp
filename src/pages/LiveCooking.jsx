@@ -23,6 +23,7 @@ export default function LiveCooking() {
   const [cookingMods, setCookingMods] = useState(location.state?.modifications || []);
   const [showComplete, setShowComplete] = useState(false);
   const timerRef = useRef(null);
+  const stepSpokenRef = useRef(false);
 
   // Timer logic
   useEffect(() => {
@@ -40,6 +41,24 @@ export default function LiveCooking() {
     }
     return () => clearInterval(timerRef.current);
   }, [timer?.paused, timer?.left]);
+
+  // Text-to-Speech for current step - speaks once per step
+  useEffect(() => {
+    // Reset the flag when step changes
+    stepSpokenRef.current = false;
+  }, [currentStep]);
+
+  useEffect(() => {
+    // Only speak if the step hasn't been spoken yet
+    if (!stepSpokenRef.current && steps[currentStep]) {
+      const synth = window.speechSynthesis;
+      const utterance = new SpeechSynthesisUtterance(steps[currentStep].instruction);
+      utterance.lang = "en-US";
+      utterance.rate = 1;
+      synth.speak(utterance);
+      stepSpokenRef.current = true;
+    }
+  }, [currentStep, steps]);
 
   const startTimer = () => {
     const step = steps[currentStep];
