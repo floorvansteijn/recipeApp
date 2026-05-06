@@ -124,8 +124,8 @@ export default function RecipeOverview() {
               onClick={() => setActiveTab(tab)}
               className="flex-1 py-2.5 rounded-full font-inter font-semibold text-[13px] uppercase transition-all duration-200"
               style={{
-                backgroundColor: activeTab === tab ? "var(--green-500)" : "transparent",
-                color: activeTab === tab ? "#FFFFFF" : "var(--green-500)",
+                backgroundColor: activeTab === tab ? "var(--green-700)" : "transparent",
+                color: activeTab === tab ? "#FFFFFF" : "var(--dark)",
                 letterSpacing: "0.8px",
               }}
             >
