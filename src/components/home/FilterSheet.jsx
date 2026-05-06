@@ -26,7 +26,7 @@ export default function FilterSheet({ isOpen, onClose, onApply, initialFilters }
         <div>
           <p
             className="font-inter font-semibold text-[13px] uppercase mb-3"
-            style={{ color: "var(--green-500)", letterSpacing: "0.8px" }}
+            style={{ color: "#4E6E1E", letterSpacing: "0.8px" }}
           >
             Type of Protein
           </p>
@@ -52,7 +52,7 @@ export default function FilterSheet({ isOpen, onClose, onApply, initialFilters }
         <div>
           <p
             className="font-inter font-semibold text-[13px] uppercase mb-3"
-            style={{ color: "var(--green-500)", letterSpacing: "0.8px" }}
+            style={{ color: "#4E6E1E", letterSpacing: "0.8px" }}
           >
             Portions
           </p>
@@ -81,7 +81,7 @@ export default function FilterSheet({ isOpen, onClose, onApply, initialFilters }
         <div>
           <p
             className="font-inter font-semibold text-[13px] uppercase mb-3"
-            style={{ color: "var(--green-500)", letterSpacing: "0.8px" }}
+            style={{ color: "#4E6E1E", letterSpacing: "0.8px" }}
           >
             Time
           </p>
