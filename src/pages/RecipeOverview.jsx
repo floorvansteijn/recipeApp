@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ChevronLeft, Clock, Users } from "lucide-react";
 import { sampleRecipes } from "../lib/recipeData";
@@ -18,6 +18,11 @@ export default function RecipeOverview() {
   const [addSheetOpen, setAddSheetOpen] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
   const [modifications, setModifications] = useState([]);
+
+  // Scroll to top when recipe changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!recipe) {
     return (
