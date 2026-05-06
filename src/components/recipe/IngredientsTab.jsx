@@ -60,8 +60,8 @@ export default function IngredientsTab({ ingredients, onIngredientsChange, onEdi
               style={{ backgroundColor: "var(--green-100)" }}
               title="Substitute ingredient"
             >
-              <ArrowLeftRight size={13} style={{ color: "var(--green-500)" }} />
-              <span className="font-inter text-[11px] font-medium" style={{ color: "var(--green-500)" }}>Sub</span>
+              <ArrowLeftRight size={13} style={{ color: "var(--green-700)" }} />
+              <span className="font-inter text-[11px] font-medium" style={{ color: "var(--green-700)" }}>Sub</span>
             </button>
           </div>
         ))}
@@ -71,7 +71,7 @@ export default function IngredientsTab({ ingredients, onIngredientsChange, onEdi
       <button
         onClick={onAddIngredient}
         className="w-full mt-4 py-3 rounded-full flex items-center justify-center gap-2 font-inter font-medium text-[14px] transition-all hover:opacity-80 active:scale-[0.97]"
-        style={{ backgroundColor: "var(--green-100)", color: "var(--green-500)" }}
+        style={{ backgroundColor: "var(--green-100)", color: "var(--green-700)" }}
       >
         <Plus size={16} />
         Add Ingredient
