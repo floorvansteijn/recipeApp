@@ -154,7 +154,7 @@ export default function RecipeOverview() {
         <button
           onClick={startCooking}
           className="w-full py-3.5 rounded-full font-inter font-medium text-[14px] transition-all hover:opacity-90 active:scale-[0.97]"
-          style={{ backgroundColor: "var(--dark)", color: "#FFFFFF", minHeight: 44 }}
+          style={{ backgroundColor: "var(--green-700)", color: "#FFFFFF", minHeight: 44 }}
         >
           Start Cooking
         </button>
