@@ -55,6 +55,17 @@ export default function LiveCooking() {
       const utterance = new SpeechSynthesisUtterance(steps[currentStep].instruction);
       utterance.lang = "en-US";
       utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      
+      // Get English voice if available
+      const voices = synth.getVoices();
+      const englishVoice = voices.find((voice) => voice.lang.startsWith("en-US")) || 
+                          voices.find((voice) => voice.lang.startsWith("en"));
+      if (englishVoice) {
+        utterance.voice = englishVoice;
+      }
+      
       synth.speak(utterance);
       stepSpokenRef.current = true;
     }
@@ -64,6 +75,28 @@ export default function LiveCooking() {
     const step = steps[currentStep];
     const mins = step.duration_minutes || 5;
     setTimer({ label: step.instruction.substring(0, 20), total: mins * 60, left: mins * 60, paused: false });
+  };
+
+  const repeatInstructions = () => {
+    if (steps[currentStep]) {
+      const synth = window.speechSynthesis;
+      synth.cancel(); // Cancel any ongoing speech
+      const utterance = new SpeechSynthesisUtterance(steps[currentStep].instruction);
+      utterance.lang = "en-US";
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      
+      // Get English voice if available
+      const voices = synth.getVoices();
+      const englishVoice = voices.find((voice) => voice.lang.startsWith("en-US")) || 
+                          voices.find((voice) => voice.lang.startsWith("en"));
+      if (englishVoice) {
+        utterance.voice = englishVoice;
+      }
+      
+      synth.speak(utterance);
+    }
   };
 
   const goNext = useCallback(() => {
@@ -99,6 +132,7 @@ export default function LiveCooking() {
   const navigateRef = useRef(navigate);
   const handleSaveDecisionRef = useRef(handleSaveDecision);
   const handleStepModifyRef = useRef(handleStepModify); // Added ref for adding ingredients via speech
+  const repeatInstructionsRef = useRef(repeatInstructions);
 
   useEffect(() => { goNextRef.current = goNext; }, [goNext]);
   useEffect(() => { goPrevRef.current = goPrev; }, [goPrev]);
@@ -106,6 +140,7 @@ export default function LiveCooking() {
   useEffect(() => { navigateRef.current = navigate; }, [navigate]);
   useEffect(() => { handleSaveDecisionRef.current = handleSaveDecision; }, [handleSaveDecision]);
   useEffect(() => { handleStepModifyRef.current = handleStepModify; }, [handleStepModify]);
+  useEffect(() => { repeatInstructionsRef.current = repeatInstructions; }, []);
 
   // --- VOICE RECOGNITION LOGIC ---
   useEffect(() => {
@@ -167,8 +202,16 @@ export default function LiveCooking() {
         }
 
         // 3. Tool & UI Commands
-        else if (text.includes("start timer") || text.includes("timer")) {
+        else if (text.includes("start timer") || (text.includes("timer") && !text.includes("stop"))) {
           startTimerRef.current();
+          executed = true;
+        }
+        else if (text.includes("stop timer")) {
+          setTimer(null);
+          executed = true;
+        }
+        else if (text.includes("instructions again") || text.includes("repeat instructions") || text.includes("repeat that")) {
+          repeatInstructionsRef.current();
           executed = true;
         }
         else if (text.includes("help") || text.includes("explain") || text.includes("show pictures")) {
