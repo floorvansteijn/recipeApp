@@ -202,8 +202,12 @@ export default function LiveCooking() {
         }
 
         // 3. Tool & UI Commands
-        else if (text.includes("start timer") || (text.includes("timer") && !text.includes("stop"))) {
+        else if (text.includes("start timer") || (text.includes("timer") && !text.includes("stop") && !text.includes("pause"))) {
           startTimerRef.current();
+          executed = true;
+        }
+        else if (text.includes("pause timer")) {
+          setTimer((t) => t ? { ...t, paused: true } : null);
           executed = true;
         }
         else if (text.includes("stop timer")) {
