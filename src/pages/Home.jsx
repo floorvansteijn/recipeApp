@@ -57,7 +57,7 @@ export default function Home() {
         <Link
           to="/my-recipes"
           className="flex items-center gap-1.5 px-4 py-2 rounded-full font-inter font-medium text-[13px] transition-all duration-150 hover:opacity-80 active:scale-[0.97]"
-          style={{ backgroundColor: "var(--green-100)", color: "var(--dark)" }}
+          style={{ backgroundColor: "var(--green-100)", color: "#000000" }}
         >
           <BookOpen size={16} />
           My Recipe Book

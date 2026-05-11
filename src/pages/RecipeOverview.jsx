@@ -81,7 +81,7 @@ export default function RecipeOverview() {
           onClick={() => navigate("/")}
           className="absolute top-4 left-4 w-10 h-10 rounded-full bg-card/80 backdrop-blur-sm flex items-center justify-center"
         >
-          <ChevronLeft size={20} style={{ color: "var(--dark)" }} />
+          <ChevronLeft size={20} style={{ color: "#000000" }} />
         </button>
       </div>
 
@@ -111,7 +111,7 @@ export default function RecipeOverview() {
               <span
                 key={tag}
                 className="text-[10px] font-inter font-medium uppercase px-2 py-0.5 rounded"
-                style={{ backgroundColor: "var(--green-100)", color: "var(--dark)", letterSpacing: "0.8px" }}
+                style={{ backgroundColor: "var(--green-100)", color: "#000000", letterSpacing: "0.8px" }}
               >
                 {tag}
               </span>
@@ -130,7 +130,7 @@ export default function RecipeOverview() {
               className="flex-1 py-2.5 rounded-full font-inter font-semibold text-[13px] uppercase transition-all duration-200"
               style={{
                 backgroundColor: activeTab === tab ? "#4E6E1E" : "transparent",
-                color: activeTab === tab ? "#FFFFFF" : "var(--dark)",
+                color: activeTab === tab ? "#FFFFFF" : "#000000",
                 letterSpacing: "0.8px",
               }}
             >

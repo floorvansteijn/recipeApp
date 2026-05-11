@@ -427,7 +427,7 @@ export default function LiveCooking() {
             <div className="bg-card rounded-xl p-6 max-w-sm w-full text-center border" style={{ borderColor: "var(--border-color)", backgroundColor: "#FFFFFF" }}>
               
               <p className="font-inter text-[14px] mt-2 mb-6" style={{ color: "var(--text-secondary)" }}>
-                Do you want to save this recipe to "My Recipe"?
+                Do you want to save this recipe to 'My Recipe Book'?
               </p>
               <div className="flex gap-3">
                 <button

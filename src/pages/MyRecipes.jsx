@@ -75,9 +75,9 @@ export default function MyRecipes() {
           onClick={() => navigate(-1)}
           className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-muted transition-colors"
         >
-          <ChevronLeft size={24} style={{ color: "var(--dark)" }} />
+          <ChevronLeft size={24} style={{ color: "#000000" }} />
         </button>
-        <h1 className="font-playfair font-semibold text-lg" style={{ color: "var(--dark)" }}>
+        <h1 className="font-playfair font-semibold text-lg" style={{ color: "#000000" }}>
           My Recipe Book
         </h1>
         <button

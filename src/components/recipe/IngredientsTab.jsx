@@ -61,8 +61,8 @@ export default function IngredientsTab({ ingredients, onIngredientsChange, onEdi
               style={{ backgroundColor: "var(--green-100)" }}
               title="Substitute ingredient"
             >
-              <ArrowLeftRight size={13} style={{ color: "var(--dark)" }} />
-              <span className="font-inter text-[11px] font-medium" style={{ color: "var(--dark)" }}>Sub</span>
+              <ArrowLeftRight size={13} style={{ color: "#000000" }} />
+              <span className="font-inter text-[11px] font-medium" style={{ color: "#000000" }}>Sub</span>
             </button>
 
             {/* Guide button for chicken thighs */}
@@ -73,8 +73,8 @@ export default function IngredientsTab({ ingredients, onIngredientsChange, onEdi
                 style={{ backgroundColor: "var(--green-100)" }}
                 title="Deboning guide"
               >
-                <BookOpen size={13} style={{ color: "var(--dark)" }} />
-                <span className="font-inter text-[11px] font-medium" style={{ color: "var(--dark)" }}>Guide</span>
+                <BookOpen size={13} style={{ color: "#000000" }} />
+                <span className="font-inter text-[11px] font-medium" style={{ color: "#000000" }}>Guide</span>
               </button>
             )}
           </div>

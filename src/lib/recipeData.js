@@ -36,7 +36,7 @@ export const sampleRecipes = [
     protein_type: "lamb",
     cooking_time: 35,
     portions: 4,
-    tags: ["Dinner", "Grilled"],
+    tags: ["Dinner", "Grilled", "Lamb"],
     ingredients: [
       { name: "Ground lamb", amount: "500g", notes: "" },
       { name: "Yellow onion", amount: "1 medium", notes: "grated" },
@@ -70,7 +70,7 @@ export const sampleRecipes = [
     protein_type: "vegetarian",
     cooking_time: 15,
     portions: 3,
-    tags: ["Lebanese", "Quick", "Lunch", "Healthy"],
+    tags: ["Lebanese", "Quick", "Lunch", "Healthy", "Vegetarian"],
     ingredients: [
       { name: "Pita bread", amount: "2", notes: "torn into pieces" },
       { name: "Romaine lettuce", amount: "1 head", notes: "chopped" },
@@ -101,7 +101,7 @@ export const sampleRecipes = [
     protein_type: "chicken",
     cooking_time: 45,
     portions: 2,
-    tags: ["Dinner", "Lebanese"],
+    tags: ["Lebanese", "Chicken"],
     ingredients: [
       { name: "Chicken thighs", amount: "400g", notes: "" },
       { name: "White rice", amount: "190g", notes: "" },
@@ -159,7 +159,7 @@ export const sampleRecipes = [
     protein_type: "chicken",
     cooking_time: 40,
     portions: 4,
-    tags: ["Dinner", "Street Food"],
+    tags: ["Dinner", "Street Food", "Chicken"],
     ingredients: [
       { name: "Chicken thighs", amount: "700g", notes: "boneless" },
       { name: "Yogurt", amount: "3 tbsp", notes: "" },
@@ -192,7 +192,7 @@ export const sampleRecipes = [
     protein_type: "fish",
     cooking_time: 30,
     portions: 3,
-    tags: ["Quick", "Lunch"],
+    tags: ["Quick", "Lunch", "Fish"],
     ingredients: [
       { name: "White fish fillets", amount: "400g", notes: "cod or tilapia" },
       { name: "Corn tortillas", amount: "8", notes: "small" },
@@ -258,7 +258,7 @@ export const sampleRecipes = [
     protein_type: "beef",
     cooking_time: 25,
     portions: 4,
-    tags: ["Dinner", "Classic"],
+    tags: ["Dinner", "Classic", "Beef"],
     ingredients: [
       { name: "Ground beef", amount: "500g", notes: "80/20 blend" },
       { name: "Brioche buns", amount: "4", notes: "" },
